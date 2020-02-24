@@ -8,12 +8,12 @@
 """
 import asyncio
 import time
-import _thread
 
 def time_str():
     ct = time.time()
     ms = (ct - int(ct)) * 10000000
     return "%s%03d" % (time.strftime("%H:%M:%S."), ms)
+
 
 import types
 @types.coroutine
